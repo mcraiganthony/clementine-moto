@@ -21,10 +21,13 @@
 }
 
 .about__image {
-  background: url('../img/david-lee.jpg') no-repeat center center;
+  background: url('../img/david-lee.jpg') no-repeat top center;
   background-size: cover;
   min-height: 200px;
   position: relative;
+  @media (min-width: @screen-sm-min) {
+    min-height: 300px;
+  }
   @media (min-width: @screen-md-min) {
     min-height: 400px;
   }
