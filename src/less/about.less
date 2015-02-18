@@ -1,0 +1,31 @@
+// File: about.less
+// Note: 
+
+
+
+.about {
+  background-color: @gray-light;
+  margin-bottom: @margin-xxlarge;
+  padding: 0;
+}
+
+
+
+.about__copy {
+  font-weight: @font-weight-light;
+  padding: 5%;
+  @media (min-width: @screen-md-min) {
+    padding: 10%;
+    height: 400px;
+  }
+}
+
+.about__image {
+  background: url('../img/david-lee.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
+  @media (min-width: @screen-md-min) {
+    min-height: 400px;
+  }
+}

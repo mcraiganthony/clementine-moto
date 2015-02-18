@@ -1,6 +1,29 @@
 // File: scaffolding.less
 // Note: 
 
+// Headlines
+// -------------------------
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: @font-weight-light;
+}
+
+
+// Paragraphs
+// -------------------------
+
+p {
+  font-weight: @font-weight-light;
+}
+
+
+// Bold and Strong
+// -------------------------
+
+b,strong {
+  font-weight: @font-weight-bold;
+}
+
 
 // Links
 // -------------------------
@@ -14,18 +37,8 @@ a {
 // -------------------------
 
 body {
+  background-color: #e4e3e2;
   position: relative;
-  &:after {
-    content: "";
-    background: url('../img/bg-black-triangles.png') fixed;
-    opacity: 0.05;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
 }
 
 
@@ -90,11 +103,36 @@ section {
 
 .site-wrapper {
   margin: 0 auto;
-  max-width: 1200px;
-  @media(min-width: @screen-lg-min){
-    box-shadow: 0px 10px 10px rgba(0,0,0, 0.5);
+  max-width: 1400px;
+}
+
+
+// Texture Cover
+// -------------------------
+
+.texture-cover {
+  background: url('../img/grid.png') left top repeat;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.texture-cover--dark {
+  &:before {
+    content: "";
+    background-color: black;
+    opacity: 0.65;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;  
   }
 }
+
+
 
 
 
