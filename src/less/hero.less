@@ -4,9 +4,11 @@
 .hero {
   &:extend(.bg-gray-lightest);
   background-image: url('../img/hero.jpg');
+  background-position: top center;
   background-size: cover;
+  border-top: 4px solid @brand-primary;
   position: relative;
-  margin-bottom: @margin-xxlarge;
+  //margin-bottom: @margin-xxlarge;
   &__container {
     position: relative;
     max-width: 670px;
@@ -15,15 +17,18 @@
     color: @white;
     padding: @grid-gutter-width @padding-small;
     text-align: center;
+    @media (min-width: @screen-sm-min) {
+      padding: @grid-gutter-width*2 0;
+    }
     @media (min-width: @screen-lg-min) {
-      background-attachment: fixed;
-      padding: @grid-gutter-width*2.5 0;
+      padding: @grid-gutter-width  0;
     }
     h1,p {
       text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
     }
     h1 {
       &:extend(.font-weight-light);
+      color: @white;
       margin: 0 0 @margin-medium 0;
       text-transform: uppercase;
     }

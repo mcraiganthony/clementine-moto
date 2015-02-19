@@ -2,7 +2,29 @@
 // Note: 
 
 .footer {
-  background-color: @gray-darker;
+  //background-color: @gray-darker;
+  background-image: url('../img/desert.jpg');
+  background-position: bottom center;
+  background-size: cover;
   color: @white;
   text-align: center;
+  padding-bottom: 200px;
+  position: relative;
+  @media(min-width: @screen-sm-min){
+    padding-bottom: 200px;
+  }
+  /*@media(min-width: @screen-sm-min){
+    padding-bottom: 400px;
+  }
+  @media(min-width: @screen-md-min){
+    padding-bottom: 480px;
+  }
+  @media(min-width: @screen-lg-min){
+    padding-bottom: 560px;
+  }*/
+}
+
+.footer__container {
+  padding-top: @padding-xxlarge;
+  position: relative;
 }

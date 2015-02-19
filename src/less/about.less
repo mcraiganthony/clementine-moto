@@ -5,8 +5,15 @@
 
 .about {
   background-color: @gray-lighter;
+  
   //margin-bottom: @margin-xxlarge;
+  //margin: @margin-xxlarge 0;
+  overflow: hidden;
   padding: 0;
+  @media (min-width: 1400px) {
+    border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  }
 }
 
 
@@ -26,7 +33,7 @@
   min-height: 200px;
   position: relative;
   @media (min-width: @screen-sm-min) {
-    min-height: 300px;
+    min-height: 360px;
   }
   @media (min-width: @screen-md-min) {
     min-height: 400px;
