@@ -1,0 +1,27 @@
+// File: card.less
+// Note: 
+
+.card-col {
+  margin-bottom: @grid-gutter-width;
+  &:last-child { margin-bottom: 0; }
+  @media(min-width: @screen-md-min) {
+    margin-bottom: 0;
+  }
+}
+
+.card {
+  text-align: center;
+}
+
+.card__photo {
+  background-color: fade(@brand-primary,25%);
+  border-radius: 50%;
+  display: inline-block;
+  height: 250px;
+  margin-bottom: @margin-small;
+  padding: 8px;
+  width: 250px;
+  img {
+    border-radius: 50%;
+  }
+}
