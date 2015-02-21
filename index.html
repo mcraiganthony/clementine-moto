@@ -11,6 +11,7 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/app.css">
   <script src="js/app.js"></script>
+  <style> [data-sr] { visibility: hidden; } </style>
 </head>
 <body>
 
@@ -22,61 +23,94 @@
         <div class="hero__headline js-hero__headline">
           <h1>Clementine Moto</h1>
           <p class="hero__headline__copy"><em>Air-Cooled Porsche Repair and Restoration</em></p>
-          <a data-scroll href="#about" class="btn btn-primary btn-sm"><span class="caret"></span></a>
+          <a data-scroll href="#services" class="btn btn-primary btn-sm"><span class="caret"></span></a>
         </div>
       </div>
     </section>
-    <section id="about" class="about">
+
+    <section id="services" class="services">
+      <div class="services__container">
+        <h3 class="section__headline text-center">Some of Our Services</h3><br>
+        <div class="row">
+          <div class="col-sm-4 card-col">
+            <div class="card" data-sr="scale up 20%">
+              <div class="card__photo">
+                <img src="img/card-repair.jpg" alt="">
+              </div>
+              <h4>Maintain</h4>
+              <p class="card__copy">We handle routine maintenance items such as oil changes, valve adjustments, tune-ups, and more.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 card-col">
+            <div class="card" data-sr="wait 0.25s then scale up 20%">
+              <div class="card__photo">
+                <img src="img/card-restore.jpg" alt="">
+              </div>
+              <h4>Repair / Rebuild / Restore</h4>
+              <p class="card__copy">In addition to routine repairs, we offer full engine / transmission rebuilds and full car restoration.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 card-col">
+            <div class="card" data-sr="wait 0.5s then scale up 20%">
+              <div class="card__photo">
+                <img src="img/card-modify.jpg" alt="">
+              </div>
+              <h4>Modify</h4>
+              <p class="card__copy">Lower, align, corner balance, track prep, cooling modifications - we can do it.</p>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="services__teaser text-center">
+          <a data-scroll href="#contact" class="btn btn-outline-primary">contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-6 no-padding">
-            <div class="about__image"><div class="texture-cover"></div></div>
+          <div class="col-md-6 no-padding">
+            <div class="about__image about__image--david-lee" data-sr="enter bottom"><div class="texture-cover"></div></div>
           </div>
-          <div class="col-sm-6 no-padding">
+          <div class="col-md-6 no-padding">
             <div class="about__copy">
-              <h3 class="section__headline">About Clementine Moto</h3>
-              <p>Mauris blandit nulla eget purus imperdiet pulvinar. Pellentesque ante turpis, sodales vel luctus eget, sollicitudin ut mauris. Donec et nunc semper, pellentesque urna a, lobortis nisl. Suspendisse mollis mauris rhoncus, porta tellus eu, mollis tellus. Quisque sed enim rutrum, iaculis elit in, facilisis nunc. Sed mi mi, auctor ut mollis quis, faucibus a arcu. Fusce ultrices nisl non diam porttitor, sit amet efficitur leo dapibus.</p>
+              <h3 class="section__headline">David Lee</h3>
+              <p>David Lee is the man behind Clementine Bicycle Works, an original brand of bespoke carbon fiber bicycles. A former bike racer, David chases his passions and, at every turn in his career, builds his livelihood around the things that move him. Over the years, his love of collecting rare vintage motorcycles and classic cars has grown into a business of bringing them back to life. A masterful self-taught mechanic, his wheels (and wrenches) are always turning, and, in that way, Clementine has become a rolling chassis of custom designs, full restoration and repair services. David’s signature style, personality and artistry combined with his longtime love affair with air-cooled Porsches naturally led to Clementine Moto. Because he loves what he does, David goes full-gas every day. Get in, get on or get out of the way. When he’s not in the garage or paint booth, the Charleston native can be seen racing up the Ravenel Bridge on his Clementine bicycle or in his daily driver, an Aventurine Green 1996 993. </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="services" class="services">
-      <div class="container">
-        <h3 class="section__headline text-center">Some of Our Services</h3><br>
-        <div class="col-md-4 card-col">
-          <div class="card" data-sr="scale up 20%">
-            <div class="card__photo">
-              <img src="img/card-repair.jpg" alt="">
-            </div>
-            <h4>Maintain</h4>
-            <p>We handle routine maintenance items such as oil changes, valve adjustments, tune-ups, and more.</p>
+
+    <section class="bg-white">
+      <div class="container text-center">
+        <blockquote>
+          <p>Like you, we are passionate about air-cooled Porsches. We will treat your car like we treat our own.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-md-push-6 no-padding">
+            <div class="about__image about__image--craig-anthony" data-sr="enter bottom"><div class="texture-cover"></div></div>
           </div>
-        </div>
-        <div class="col-md-4 card-col">
-          <div class="card" data-sr="wait 0.25s then scale up 20%">
-            <div class="card__photo">
-              <img src="img/card-restore.jpg" alt="">
+          <div class="col-md-6 col-md-pull-6 no-padding">
+            <div class="about__copy">
+              <h3 class="section__headline">Craig Anthony</h3>
+              <p>Craig Anthony is a second-generation Porsche owner, wrencher, and enthusiast. As a little tike, Craig lusted after the Porsche 911. His thirst for the marquee was quenched in 2004 when he bought a Chiffon Weiss 1982 911 SC. A few years later he tore the tired engine apart and performed a full rebuild. In recent years, he's added two more Porsches to his stable - a 1979 911 SC and a 2008 Cayenne S. In 2011 Craig built a dream garage to house his prized possessions - and this is where the Clementine Moto magic happens. The beauty of this private set-up is that it allows for an intensely personal approach to each project. At the end of the day, it’s work that never feels like a job, and, at the end of the week, there’s nothing Craig loves more than to take his beloved 1982 911 SC on a long drive through the Lowcountry with his young son, Gunnar, riding shotgun.</p>
             </div>
-            <h4>Repair / Rebuild / Restore</h4>
-            <p>In addition to routine repairs, we offer full engine / transmission rebuilds and full car restoration.</p>
-          </div>
-        </div>
-        <div class="col-md-4 card-col">
-          <div class="card" data-sr="wait 0.5s then scale up 20%">
-            <div class="card__photo">
-              <img src="img/card-modify.jpg" alt="">
-            </div>
-            <h4>Modify</h4>
-            <p>Lower, align, corner balance, track prep, cooling modifications - we can do it.</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="footer" class="footer">
+    
+    <section id="contact" class="footer">
       <div class="texture-cover texture-cover--darker"></div>
       <div class="footer__container container">
-        <p>Clementine Moto | Charleston, South Carolina | <a href="mailto:david@clementinebikes.com">david@clementinebikes.com</a> | 615.482.4425</p>
+        <p class="footer__copy">Clementine Moto | Charleston, South Carolina | <a href="mailto:david@clementinebikes.com">david@clementinebikes.com</a> | 615.482.4425</p>
       </div>
     </section>
   
