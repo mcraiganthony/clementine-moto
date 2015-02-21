@@ -10,11 +10,21 @@
 }
 
 .about__copy {
+  border-top: 4px solid @brand-primary;
   font-weight: @font-weight-light;
   padding: @grid-gutter-width;
+  text-align: justify;
+  .section__headline {
+    text-align: center;
+    trasform: scale(1)!important;
+  }
   @media (min-width: @screen-md-min) {
     padding: 5%;
     height: 440px;
+    text-align: left;
+    .section__headline {
+      text-align: left;
+    }
   }
   @media (min-width: @screen-lg-min) {
     padding: 8%;
@@ -22,8 +32,7 @@
 }
 
 .about__image {
-  background: url('../img/david-lee.jpg') no-repeat top center;
-  background-size: cover;
+  
   min-height: 200px;
   position: relative;
   @media (min-width: @screen-sm-min) {
@@ -33,3 +42,15 @@
     min-height: 440px;
   }
 }
+
+.about__image--craig-anthony {
+  background: url('../img/craig-anthony.jpg') no-repeat top center;
+  background-size: cover;
+}
+
+.about__image--david-lee {
+  background: url('../img/david-lee.jpg') no-repeat top center;
+  background-size: cover;
+}
+
+

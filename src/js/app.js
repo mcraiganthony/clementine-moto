@@ -12,12 +12,8 @@ $(document).ready(function() {
     }
   });
 
-  // On larger screens, run some extra js
-
-  if($(window).width() > 1260) {
-    // See: https://github.com/julianlloyd/scrollReveal.js
-    window.sr = new scrollReveal();
-  }
+  // See: https://github.com/julianlloyd/scrollReveal.js
+  window.sr = new scrollReveal( { scale:{ direction: 'up', power: '0%' }, vFactor:  0.40 } );
 
   // Initialize smooth scroll
 

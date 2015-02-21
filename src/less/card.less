@@ -22,11 +22,15 @@
   background-color: fade(@brand-primary,25%);
   border-radius: 50%;
   &:extend(.inline-block);
-  height: 260px;
+  height: 210px;
   margin-bottom: @margin-small;
   padding: 8px;
-  width: 260px;
+  width: 210px;
   img {
     border-radius: 50%;
+  }
+  @media(min-width: @screen-md-min) {
+    height: 260px;
+    width: 260px;
   }
 }
